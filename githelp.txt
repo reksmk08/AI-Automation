@@ -1,0 +1,57 @@
+git config --global user.name "Rekha Kannan"
+git config --global user.email "reksmk08@gmail.com"
+git config --list or git config --global –list ==> To see all the git configuration settings
+ 
+git init ==> It Creates a local git Repo
+git status ==> check git status
+ 
+create a file (ex test1.txt) and add Hello World.. then 
+git add test1.txt ==> Stages the file (prepare to commit) 
+  git add . (it added all the files in the directory)
+git commit -m "My first git commit"  ==> save to git history with the mesage provided 
+git log or git status ==> To check the commit status
+ 
+Open the file (test1.txt in notepad) and make some changes 
+git status
+git diff ==> it shows the diff b/w current/modified  and previous version differences
+git add test1.txt
+git commit -m "updated the file .."
+ 
+.gitignore ==> give file or extension(ex *.log) which is no need to track or saved into repository
+ 
+git branch ==> View all branches
+git branch master ==> It creates a new branch named as "master"
+git checkout master ==> switch to that (master) branch
+ 
+https://github.com/reksmk08/AI-Automation.git
+GITHUB REPO - go to https://github.com and then 
+1. sign up or login 
+2. create a new repository
+3. push local repo to github
+ 
+git remote add orgin https://github.com/muthuakc/git-demo.git  ==> connect our local repo into Github 
+git remote -v
+git branch -M master 
+git push -u orgin master ==> uploads the local code into the master branch in Github
+   git push - upload commits, orgin - remote name, master - branch name, -u - remember this relationship for future use 
+Her after just simply use git push
+
+ +++++++++++>>>>> IMPORTANT 
+git clone https://github.com/reksmk08/AI-Automation
+git add . (prepare to commit in ur local)
+git commit -m “added line 3 in the file” (commit the file into your local repo note that this point it is not pushed to git repo)
+git push (now it push the changes from local repo to gurhub)
+
+git fetch ( fetch the github  changes to local)
+git status 
+now we can do git merge or git pull (git pull is equivalent to git fetch + git merge).
+git diff master origin/master   to see what changed 
+
+https://www.youtube.com/watch?v=Sxs6qEGcp7Y&t=3544s  reksmk08/1..@001122
+TO GET REMOTE(github) CHANGES TO LOCAL BRANCH
+git fetch 
+git merge orgin/master
+
+Below merge command used to merge feature branch into master (current branch)
+git switch master
+git merge feature-1
