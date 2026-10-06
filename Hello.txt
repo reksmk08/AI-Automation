@@ -1,7 +1,2 @@
-Hello Test Git..
-Added line 2
-added line 3
-added line 4
-added lin 5 directly in GitHub yes updating
-
+Added line 1 Hello Test Git..
 
