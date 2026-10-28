@@ -1,0 +1,12 @@
+git clone https://github.com/reksmk08/AI-Automation.git
+git status
+git add "hello.txt" or git add .  (ready to commit from local machine to local repo)
+git commit -m "Added new line 2" (commit the file from local machine to local repo)
+git push (now it push the committed files to GitHub from local repo)
+
+git fetch (it fetch the latest files from GitHub to your local repo)
+git diff origin/main  ( to see the difference)
+git merge origin/main ( it merge the changes to ur local machine code)
+git pull (it is equalant of git fetch + git merge)
+
+resolve conflict
